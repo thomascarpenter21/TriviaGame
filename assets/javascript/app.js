@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //	Set variable to equal max number of correct answers.
-    var winner = 14;
+    var winner = 10;
 
     // Variable to hold correct answers, incorrect answer, unanswered questions.
     var correct;
@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
     //  Set our number counter to 120.
-    var number = 20;
+    var number = 120;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
