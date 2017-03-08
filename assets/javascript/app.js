@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
     //  Set our number counter to 120.
-    var number = 120;
+    var number = 20;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
@@ -46,21 +46,23 @@ $(document).ready(function() {
             alert("Time Up!");
 
             //	hide questions and then show results
-            $("#questions").hide();
+            $(".timer").hide();
+            $("#question").hide();
             $("#results").show();
+
         }
     }
 
 
 
-$('.myCheckbox').click(function() {
-    $(this).siblings('input:checkbox').prop('checked', false);
-});
+//$('.myCheckbox').click(function() {
+//$(this).siblings('input:checkbox').prop('checked', false);
+//});
 
 
 //Every checkboxes in the page
 $('.selectme input:checkbox').click(function() {
-    $('.selectme input:checkbox').prop('checked', false);
+    $('.selectme input:checkbox').not(this).prop('checked', false);
 });                   
 
     //render the value of 
@@ -68,7 +70,7 @@ $('.selectme input:checkbox').click(function() {
 
         var renderValue = $(this).attr('data-answer').val();
 
-        if (renderValue === pass) {
+        if (renderValue = pass) {
 
             correct++;
 
@@ -78,7 +80,7 @@ $('.selectme input:checkbox').click(function() {
 
             var pOne = $("<p>").html(correctAnswer);
 
-        } else if (renderValue === fail) {
+        } else if (renderValue = fail) {
 
             incorrect++;
 
@@ -94,6 +96,13 @@ $('.selectme input:checkbox').click(function() {
 
             var Three = $("<p>").html("unanswered" + unanswered);
         }
+
+        resultDiv.prepend(pOne);
+        resultDiv.prepend(pTwo);
+        resultDiv.prepend(pThree);
+
+        $("#results").prepend(resultDiv);
+
     };
     //  The stop function
     function stop() {
