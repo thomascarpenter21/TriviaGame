@@ -1,0 +1,408 @@
+<DOCTYPE!>
+    <html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Trivia Game</title>
+
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Creepster|Flamenco" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        </head>
+
+        <body>
+            <div class="container-fluid">
+                <div class="row">
+                    <header>
+                        <div class="col-md-12">
+                            <h1>The Walking Dead Trivia Game</h1>
+                        </div>
+                    </header>
+                </div>
+                <div class="timer"></div>
+                <br>
+                <button type="button" id="starter" class="btn btn-primary btn-lg">START GAME</button>
+                <div id="results"></div>
+                <div id="question">
+                   Who Killed Shane?:
+<input type="checkbox" class="myCheckbox" value="1" /> Darly dixon
+<input type="checkbox" class="myCheckbox" value="2" />Rick Grimes
+<input type="checkbox" class="myCheckbox" value="3" />Hershal Greene
+<input type="checkbox" class="myCheckbox" value="4" />T-Dog
+
+<br /><br /><br />
+
+<div class="selectme">
+Checkboxes test 2:
+</div>
+<div>
+<input type="checkbox" class="myCheckbox2" value="1" />Daryl Dixon
+</div>
+<div class="selectme">
+<input type="checkbox" class="myCheckbox2" value="2" />Rick Grimes
+</div>
+<div class="selectme">
+<input type="checkbox" class="myCheckbox2" value="3" />Hershal Greene
+</div>
+<div class="selectme">
+<input type="checkbox" class="myCheckbox2" value="4" />T-Dog
+</div>
+
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" data-answer="fail" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" data-answer="pass" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" data-answer="fail" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" data-answer="fail" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-12">Who killed Shane?</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"> Daryl Dixon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> Rick Grimes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"> Hershal Greene
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4"> T-Dog
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    < </div>
+                </div>
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+                <script type="text/javascript" src="assets/javascript/app.js"></script>
+        </body>
+
+    </html>
